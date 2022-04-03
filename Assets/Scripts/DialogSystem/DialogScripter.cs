@@ -25,8 +25,8 @@ public class DialogScripter : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown && !dialogGameObject.activeSelf)
-            SetNewDialog();
+        /*if (Input.anyKeyDown && !dialogGameObject.activeSelf)
+            SetNewDialog();*/
     }
 
     public void SetNewDialog()

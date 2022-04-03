@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 266
     height: 631
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 283
+  controlID: 61
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 132
+  controlID: 60
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 125
+  controlID: 59
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,22 +369,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/3D Models
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 71
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
-  m_LastFoldersGridSize: 71
+  - Assets/3D Models
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\UnityProjects\PC\Shubrium
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 49}
-    m_SelectedIDs: 3e4a0000
-    m_LastClickedID: 19006
-    m_ExpandedIDs: 000000002c4a0000404a000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 20400000
+    m_LastClickedID: 16416
+    m_ExpandedIDs: 000000001a4000001c4000002a4000001243000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,7 +412,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c4a0000
+    m_ExpandedIDs: 000000001a4000001c400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300007478000000000000
+    m_ExpandedInstanceIDs: c6230000747800000000000058430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -464,8 +464,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 71
+    m_ScrollPosition: {x: 0, y: 27}
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 272.2
 --- !u!114 &15
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90510000
-      m_LastClickedID: 20880
-      m_ExpandedIDs: aeb1ffff32efffffa2490000f6500000365100004651000090510000
+      m_SelectedIDs: da3f0000
+      m_LastClickedID: 16346
+      m_ExpandedIDs: 7cf9ffff423f0000ae3f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.4929285, y: -27.720493, z: 66.948586}
+    m_Target: {x: 14.216693, y: -14.894475, z: 78.28625}
     speed: 2
-    m_Value: {x: 8.4929285, y: -27.720493, z: 66.948586}
+    m_Value: {x: 14.216692, y: -14.894475, z: 78.28625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -644,9 +644,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23091109, y: 0.055425335, z: -0.013176859, w: 0.97130936}
+    m_Target: {x: 0.10852676, y: 0.053654987, z: -0.0058651934, w: 0.99263406}
     speed: 2
-    m_Value: {x: 0.23091024, y: 0.05542513, z: -0.013176811, w: 0.9713058}
+    m_Value: {x: 0.10703695, y: 0.053663354, z: -0.005784662, w: 0.9927889}
   m_Size:
     m_Target: 45.64805
     speed: 2

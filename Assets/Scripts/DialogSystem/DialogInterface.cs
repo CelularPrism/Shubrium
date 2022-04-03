@@ -12,8 +12,6 @@ public interface DialogInterface
 
     public void ChangeSO();
 
-    public void ChangePsycho(float psycho, float fatigue);
-
     public void VariantA();
     public void VariantB();
     public void VariantC();

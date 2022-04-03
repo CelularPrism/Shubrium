@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Variant 1
   m_EditorClassIdentifier: 
   text: Dialog 1. Variant 1
-  psycho: 0
-  fatigue: 0
+  psycho: 1
+  fatigue: 2
   dialog: {fileID: 11400000, guid: 9b7ea6f194c8be240b2785eed6b3407a, type: 2}

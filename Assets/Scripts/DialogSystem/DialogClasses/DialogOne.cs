@@ -27,15 +27,12 @@ public class DialogOne : DialogInterface
         }
     }
 
-    public void ChangePsycho(float psycho, float fatigue)
-    {
-
-    }
-
     public void VariantA()
     {
-        SOVariant variant = dialog.variants[0];
-        ChangePsycho(variant.psycho, variant.fatigue);
+        SOVariant variant = dialog.variants[0]; 
+        dialogManager.ChangePsycho(variant.psycho);
+        dialogManager.ChangeFatigue(variant.fatigue);
+
         dialogManager.SetSODialog(variant.dialog);
         dialog = variant.dialog;
     }
@@ -43,7 +40,9 @@ public class DialogOne : DialogInterface
     public void VariantB()
     {
         SOVariant variant = dialog.variants[1];
-        ChangePsycho(variant.psycho, variant.fatigue);
+        dialogManager.ChangePsycho(variant.psycho);
+        dialogManager.ChangeFatigue(variant.fatigue);
+
         dialogManager.SetSODialog(variant.dialog);
         dialog = variant.dialog;
     }
@@ -51,7 +50,9 @@ public class DialogOne : DialogInterface
     public void VariantC()
     {
         SOVariant variant = dialog.variants[2];
-        ChangePsycho(variant.psycho, variant.fatigue);
+        dialogManager.ChangePsycho(variant.psycho);
+        dialogManager.ChangeFatigue(variant.fatigue);
+
         dialogManager.SetSODialog(variant.dialog);
         dialog = variant.dialog;
     }
@@ -59,7 +60,9 @@ public class DialogOne : DialogInterface
     public void VariantD()
     {
         SOVariant variant = dialog.variants[3];
-        ChangePsycho(variant.psycho, variant.fatigue);
+        dialogManager.ChangePsycho(variant.psycho);
+        dialogManager.ChangeFatigue(variant.fatigue);
+
         dialogManager.SetSODialog(variant.dialog);
         dialog = variant.dialog;
     }

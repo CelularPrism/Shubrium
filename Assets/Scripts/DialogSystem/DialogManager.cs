@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    [SerializeField] private PsychoController psychoController;
     [SerializeField] private TextDialogChanger dialogChanger;
     [SerializeField] private GameObject variantsGameObject;
     private DialogInterface dialogInterface;
@@ -50,6 +51,16 @@ public class DialogManager : MonoBehaviour
             variant.GetChild(0).GetComponent<Text>().text = dialog.variants[index].text;
             index++;
         }
+    }
+
+    public void ChangePsycho(float psycho)
+    {
+        psychoController.ChangePsycho(psycho);
+    }
+
+    public void ChangeFatigue(float fatigue)
+    {
+        psychoController.ChangeFatigue(fatigue);
     }
 
     public void CloseDialog()
