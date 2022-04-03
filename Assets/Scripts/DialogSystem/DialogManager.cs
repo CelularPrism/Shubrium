@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    [SerializeField] private PsychoController psychoController;
     [SerializeField] private TextDialogChanger dialogChanger;
     [SerializeField] private GameObject variantsGameObject;
     private DialogInterface dialogInterface;
@@ -36,8 +38,29 @@ public class DialogManager : MonoBehaviour
             }
         } else
         {
+            SetVariants();
             variantsGameObject.SetActive(true);
         }
+    }
+
+    private void SetVariants()
+    {
+        int index = 0;
+        foreach(Transform variant in variantsGameObject.transform)
+        {
+            variant.GetChild(0).GetComponent<Text>().text = dialog.variants[index].text;
+            index++;
+        }
+    }
+
+    public void ChangePsycho(float psycho)
+    {
+        psychoController.ChangePsycho(psycho);
+    }
+
+    public void ChangeFatigue(float fatigue)
+    {
+        psychoController.ChangeFatigue(fatigue);
     }
 
     public void CloseDialog()
