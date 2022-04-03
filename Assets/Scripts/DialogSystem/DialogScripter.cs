@@ -8,13 +8,17 @@ public class DialogScripter : MonoBehaviour
 {
     [SerializeField] private GameObject dialogGameObject;
     [SerializeField] private GameObject dialogChangerGameObject;
+    [SerializeField] private DoctorNavMesh doctorNav;
+    [SerializeField] private Phone phone;
 
     private List<DialogInterface> dialogInterfaces;
+    private ObjectsScripter objectsScripter;
     private DialogManager dialogManager;
 
     private void Start()
     {
         dialogManager = dialogGameObject.GetComponent<DialogManager>();
+        objectsScripter = GetComponent<ObjectsScripter>();
 
         var list = from t in Assembly.GetExecutingAssembly().GetTypes()
                    where t.GetInterfaces().Contains(typeof(DialogInterface))
@@ -23,10 +27,17 @@ public class DialogScripter : MonoBehaviour
         dialogInterfaces = list.ToList();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        /*if (Input.anyKeyDown && !dialogGameObject.activeSelf)
-            SetNewDialog();*/
+        if (!dialogManager.isActive)
+        {
+            if (!phone.enabled)
+                objectsScripter.isActive = true;
+            doctorNav.enabled = true;
+        } else
+        {
+            doctorNav.enabled = false;
+        }
     }
 
     public void SetNewDialog()

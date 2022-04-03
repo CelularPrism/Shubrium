@@ -25,6 +25,16 @@ public class MusicManager : MonoBehaviour
         musicSrc.Play();
     }
 
+    public void PlayMusic()
+    {
+        musicSrc.Play();
+    }
+
+    public void StopMusic()
+    {
+        musicSrc.Stop();
+    }
+
     public void SetAudioClip(AudioClip audioClip)
     {
         musicSrc.clip = audioClip;

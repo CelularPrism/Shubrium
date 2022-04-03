@@ -10,7 +10,7 @@ public class Chair : Objects
             
         if(isActive && other.name == "Doctor")
         {
-            Debug.Log("This is chair");
+            //Debug.Log("This is chair");
             isActive = false;
         }
     }

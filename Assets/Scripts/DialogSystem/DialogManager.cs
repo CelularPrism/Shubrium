@@ -8,6 +8,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private PsychoController psychoController;
     [SerializeField] private TextDialogChanger dialogChanger;
     [SerializeField] private GameObject variantsGameObject;
+
+    public bool isActive = true;
+
     private DialogInterface dialogInterface;
     private SODialog dialog;
 
@@ -68,10 +71,12 @@ public class DialogManager : MonoBehaviour
         variantsGameObject.SetActive(false);
         dialogChanger.gameObject.SetActive(false);
         transform.gameObject.SetActive(false);
+        isActive = false;
     }
 
     public void SetDialog(DialogInterface dialog)
     {
+        isActive = true;
         dialogInterface = dialog;
         dialogInterface.dialogManager = this;
         SetSODialog(dialog.GetDialog());

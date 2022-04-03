@@ -26,7 +26,7 @@ public class DoctorNavMesh : MonoBehaviour
             SetDestinationToMousePosition();
         }
         float distance = Vector3.Distance(transform.position, posTransform);
-        if(distance <= maxDistance)
+        if (distance <= maxDistance)
         {
             isMove = false;
         } else

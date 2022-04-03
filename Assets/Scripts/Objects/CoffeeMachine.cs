@@ -10,7 +10,7 @@ public class CoffeeMachine : Objects
 
         if (isActive && other.name == "Doctor")
         {
-            Debug.Log("This is coffeeemachine");
+            //Debug.Log("This is coffeeemachine");
             isActive = false;
         }
     }

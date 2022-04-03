@@ -15,11 +15,11 @@ public class PsychoController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        /*if (Input.GetKeyDown(KeyCode.Mouse0))
             ChangePsycho(psychoChanger);
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
-            ChangePsycho(-psychoChanger);
+            ChangePsycho(-psychoChanger);*/
     }
 
     public void ChangePsycho(float psycho)
