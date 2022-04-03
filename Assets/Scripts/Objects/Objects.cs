@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Objects : MonoBehaviour
+public abstract class Objects : MonoBehaviour, ObjectsInterface
 {
-    public bool isActive = false;
+    public bool isActive { get; set; } = false;
+    [SerializeField] private ObjectsManager objectsManager;
 
     private GameObject _mainCharacter;
 
@@ -25,7 +26,7 @@ public abstract class Objects : MonoBehaviour
     {
         isActive = true;
         _currentDistance = Vector3.Distance(_mainCharacterTransform.transform.position, _objectTransform.transform.position);
-
+        objectsManager.DisableActive(this);
         //GameObject ob
     }
     public virtual void OnTriggerEnter(Collider other)
@@ -34,7 +35,7 @@ public abstract class Objects : MonoBehaviour
     }
     public void Update()
     {
-        if (isActive && )
+        if (isActive)
         {
             _previousDistance = _currentDistance;
             _currentDistance = Vector3.Distance(_mainCharacterTransform.transform.position, _objectTransform.transform.position);
