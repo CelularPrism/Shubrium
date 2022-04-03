@@ -5,13 +5,17 @@ using UnityEngine.AI;
 
 public class DoctorNavMesh : MonoBehaviour
 {
+    [SerializeField] private float maxDistance;
+    public bool isMove = false;
     private NavMeshAgent _myNavMeshAgent;
 
     private LayerMask _interactableLayerMask;
+    private Vector3 posTransform;
 
     private void Awake()
     {
         _myNavMeshAgent = GetComponent<NavMeshAgent>();
+        posTransform = transform.position;
 
         _interactableLayerMask = 1 << 7; //layer seven for interactable object
     }
@@ -21,9 +25,13 @@ public class DoctorNavMesh : MonoBehaviour
         {
             SetDestinationToMousePosition();
         }
-        if(_myNavMeshAgent.isStopped)
+        float distance = Vector3.Distance(transform.position, posTransform);
+        if(distance <= maxDistance)
         {
-
+            isMove = false;
+        } else
+        {
+            isMove = true;
         }
     }
     void SetDestinationToMousePosition()
@@ -32,7 +40,8 @@ public class DoctorNavMesh : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, _interactableLayerMask))
         {
-            _myNavMeshAgent.SetDestination(hit.transform.GetChild(0).position);
+            posTransform = hit.transform.GetChild(0).position;
+            _myNavMeshAgent.SetDestination(posTransform);
         }
     }
 }
