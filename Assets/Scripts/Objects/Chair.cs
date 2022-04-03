@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chair : MonoBehaviour
+public class Chair : Objects
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.OnTriggerEnter(other);
+            
+        if(isActive && other.name == "Doctor")
+        {
+            Debug.Log("This is chair");
+            isActive = false;
+        }
     }
 }

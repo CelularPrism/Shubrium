@@ -21,6 +21,10 @@ public class DoctorNavMesh : MonoBehaviour
         {
             SetDestinationToMousePosition();
         }
+        if(_myNavMeshAgent.isStopped)
+        {
+
+        }
     }
     void SetDestinationToMousePosition()
     {
