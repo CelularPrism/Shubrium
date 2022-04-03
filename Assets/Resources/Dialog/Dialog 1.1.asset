@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
-  m_Name: Dialog 2.3
+  m_Name: Dialog 1.1
   m_EditorClassIdentifier: 
-  text: Dialog 2.3
+  text: Dialog 1.1
   haveVariants: 1
   variants:
-  - {fileID: 11400000, guid: 79e2ece9ce692eb438006a236ccf241e, type: 2}
-  - {fileID: 11400000, guid: cf1898baabdab9846ad7a7578ece68b5, type: 2}
-  - {fileID: 11400000, guid: fc2f419b637015446adabf72a408512b, type: 2}
-  - {fileID: 11400000, guid: f8f5de5b83413d7469a1102520073855, type: 2}
+  - {fileID: 11400000, guid: 76b4fd6eb3171f442b01dc56a55b7d61, type: 2}
+  - {fileID: 11400000, guid: 58c48e87d1c08194a813dbf474833ffa, type: 2}
+  - {fileID: 11400000, guid: 3bf188341a069384885a57f38203fbc2, type: 2}
+  - {fileID: 11400000, guid: 7bd5e8423c819cd4aa2ba11347f3d264, type: 2}
   dialog: {fileID: 0}

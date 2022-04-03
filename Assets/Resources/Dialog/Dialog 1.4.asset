@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73cc089a9bf996c4ca5697f3de651f11, type: 3}
-  m_Name: Variant 3
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 1.4
   m_EditorClassIdentifier: 
-  text: Dialog 1. Variant 3
-  dialog: {fileID: 11400000, guid: a21fab0f6ca186248af3efdd996c739a, type: 2}
+  text: Dialog 1.4
+  haveVariants: 0
+  variants: []
+  dialog: {fileID: 0}

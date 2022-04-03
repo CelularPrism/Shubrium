@@ -11,26 +11,28 @@ public class DialogManager : MonoBehaviour
 
     private void Start()
     {
-        dialogInterface = new DialogOne();
+        /*dialogInterface = new DialogOne();
         dialog = dialogInterface.GetDialog();
         dialogInterface.dialogManager = this;
-        
-        dialogChanger.SetNewText(dialog.text);
+
+        dialogChanger.SetNewText(dialog.text);*/
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!dialog.haveVariants)
         {
             variantsGameObject.SetActive(false);
-            if (dialogChanger.CheckOldText(dialog.dialog.text))
+            if (Input.anyKeyDown)
             {
-                dialogChanger.SetNewText(dialog.dialog.text);
-            }
+                if (dialogChanger.CheckNowText())
+                {
+                    dialogInterface.ChangeSO();
+                    if (dialog.dialog != null)
+                        dialogChanger.SetNewText(dialog.dialog.text);
 
-            if (dialogChanger.CheckNowText())
-            {
-                dialogInterface.ChangeSO();
+                    dialog = dialogInterface.GetDialog();
+                }
             }
         } else
         {
@@ -38,10 +40,23 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    public void CloseDialog()
+    {
+        variantsGameObject.SetActive(false);
+        dialogChanger.gameObject.SetActive(false);
+        transform.gameObject.SetActive(false);
+    }
+
     public void SetDialog(DialogInterface dialog)
     {
         dialogInterface = dialog;
-        this.dialog = dialog.GetDialog();
+        dialogInterface.dialogManager = this;
+        SetSODialog(dialog.GetDialog());
+    }
+
+    public void SetSODialog(SODialog dialog)
+    {
+        this.dialog = dialog;
         dialogChanger.SetNewText(this.dialog.text);
     }
 

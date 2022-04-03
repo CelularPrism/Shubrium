@@ -5,5 +5,7 @@ using UnityEngine;
 public class SOVariant : ScriptableObject
 {
     public string text;
+    public float psycho;
+    public float fatigue;
     public SODialog dialog;
 }

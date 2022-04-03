@@ -8,8 +8,6 @@ public interface DialogInterface
 
     public DialogManager dialogManager { get; set; }
 
-    public DialogInterface nextDialog { get; set; }
-
     public SODialog GetDialog();
 
     public void ChangeSO();
