@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Phone : MonoBehaviour
+public class Phone : Objects
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnTriggerEnter(Collider other)
     {
-        
-    }
+        base.OnTriggerEnter(other);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (isActive && other.name == "Doctor")
+        {
+            Debug.Log("This is phone");
+            isActive = false;
+        }
     }
 }
