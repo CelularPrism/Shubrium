@@ -6,10 +6,11 @@ public class MusicScriptManager : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip endGame;
-
+/*
     public void EndGame()
     {
+        audioSource.loop = false;
         audioSource.clip = endGame;
         audioSource.Play();
-    }
+    }*/
 }
