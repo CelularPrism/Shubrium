@@ -22,9 +22,12 @@ public class MusicManager : MonoBehaviour
 
     private void SetAudioClip()
     {
-        nowIndexAudio = nextIndexAudio;
-        musicSrc.clip = audioPsycho[nowIndexAudio];
-        musicSrc.Play();
+        if (!musicSrc.isPlaying)
+        {
+            nowIndexAudio = nextIndexAudio;
+            musicSrc.clip = audioPsycho[nowIndexAudio];
+            musicSrc.Play();
+        }
     }
 
     public void PlayMusic()

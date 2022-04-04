@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Objects\AudioPhoneManager.cs" />
+    <Compile Include="Assets\Scripts\UIScripter.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SOVariant.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogInterface.cs" />
@@ -66,27 +67,26 @@
     <Compile Include="Assets\Scripts\ObjectsScripter.cs" />
     <Compile Include="Assets\Scripts\Objects\Phone.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectsInterface.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\Objects\Objects.cs" />
     <Compile Include="Assets\Scripts\Objects\Window.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogManager.cs" />
     <Compile Include="Assets\Scripts\PsychoController.cs" />
     <Compile Include="Assets\Scripts\Character\DoctorNavMesh.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\DialogTwo.cs" />
+    <Compile Include="Assets\Scripts\MusicScriptManager.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectsManager.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\DialogOne.cs" />
+    <Compile Include="Assets\Scripts\PsychoScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioMusicSource.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\TextChangerScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioEffectSource.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SODialog.cs" />
     <Compile Include="Assets\Scripts\StatesImageManager.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
-    <Compile Include="Assets\Scripts\PsychoScripter.cs" />
-    <Compile Include="Assets\Scripts\SceneController.cs" />
-    <Compile Include="Assets\Scripts\UIScripter.cs" />
-    <Compile Include="Assets\Scripts\MusicScriptManager.cs" />
-    <Compile Include="Assets\Scripts\TextChangerScripter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />

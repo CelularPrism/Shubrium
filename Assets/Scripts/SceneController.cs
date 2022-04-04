@@ -26,7 +26,7 @@ public class SceneController : MonoBehaviour
             doctorNavMesh.enabled = false;
 
             musicManager.StopMusic();
-            scriptMusic.EndGame();
+            musicManager.EndGame();
             uiScripter.EndGame();
 
             this.enabled = false;
