@@ -1082,6 +1082,8 @@ GameObject:
   - component: {fileID: 332308304250210376}
   - component: {fileID: 7060611355638832605}
   - component: {fileID: 7060611355638832603}
+  - component: {fileID: 4217892612819949335}
+  - component: {fileID: 8605665221570466426}
   m_Layer: 0
   m_Name: "\u041F\u043B\u043E\u0441\u043A\u043E\u0441\u0442\u044C.005"
   m_TagString: Untagged
@@ -1179,6 +1181,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogScriptAllowed: 1
+--- !u!114 &4217892612819949335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456821196350148141}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df25b86a867324543804540fce8d88ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsManager: {fileID: 0}
+  dialogScripter: {fileID: 0}
+  audioPhoneManager: {fileID: 0}
+--- !u!114 &8605665221570466426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456821196350148141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1fff47e3e002d48bc407c4e37fdb82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  musicManager: {fileID: 0}
+  musicSrc: {fileID: 0}
+  soundSrc: {fileID: 0}
+  phoneState: []
+  psychoRings: []
 --- !u!1 &1813304785470743783
 GameObject:
   m_ObjectHideFlags: 0
