@@ -20,7 +20,6 @@ public class UIScripter : MonoBehaviour
         {
             nowPanel.SetActive(false);
             nowPanel = null;
-            Debug.Log(nowPanel);
         }
     }
 
