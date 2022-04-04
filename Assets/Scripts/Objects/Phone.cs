@@ -14,8 +14,8 @@ public class Phone : Objects
         {
             if (this.enabled)
             {
-                audioPhoneManager.PickUp();
                 dialogScripter.SetNewDialog();
+                audioPhoneManager.PickUp();
             }
             //this.enabled = false;
             isActive = false;

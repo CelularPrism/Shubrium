@@ -52,7 +52,7 @@ public class TextDialogChanger : MonoBehaviour
         {
             if (textField == null)
                 textField = textGameobject.GetComponent<Text>();
-            textField.text = "";
+            textField.text = "- ";
             oldText = text;
             indexText = 0;
             /*StopAllCoroutines();

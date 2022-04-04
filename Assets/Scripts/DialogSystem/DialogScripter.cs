@@ -20,7 +20,11 @@ public class DialogScripter : MonoBehaviour
     {
         dialogManager = dialogGameObject.GetComponent<DialogManager>();
         objectsScripter = GetComponent<ObjectsScripter>();
+        SetDialogList();
+    }
 
+    private void SetDialogList()
+    {
         var list = from t in Assembly.GetExecutingAssembly().GetTypes()
                    where t.GetInterfaces().Contains(typeof(DialogInterface))
                             && t.GetConstructor(System.Type.EmptyTypes) != null
@@ -70,6 +74,9 @@ public class DialogScripter : MonoBehaviour
 
             dialogInterfaces.Remove(dialog);
             _phoneActive = true;
+        } else
+        {
+            SetDialogList();
         }
     }
 }

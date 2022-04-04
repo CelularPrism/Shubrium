@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogInterface.cs" />
     <Compile Include="Assets\Scripts\Objects\Chair.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\TextDialogChanger.cs" />
+    <Compile Include="Assets\Scripts\Character\AudioMovementController.cs" />
     <Compile Include="Assets\Scripts\ObjectsScripter.cs" />
     <Compile Include="Assets\Scripts\Objects\Phone.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectsInterface.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SODialog.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
-    <Compile Include="Assets\Scripts\Character\AudioMovementController.cs" />
+    <Compile Include="Assets\Scripts\StatesImageManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />
