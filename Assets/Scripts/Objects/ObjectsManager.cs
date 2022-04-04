@@ -13,7 +13,7 @@ public class ObjectsManager : MonoBehaviour
             if (objects != objectInterface)
             {
                 objects.isActive = false;
-                Debug.Log(trans.name + " " + false);
+                //Debug.Log(trans.name + " " + false);
             }
         }
     } 

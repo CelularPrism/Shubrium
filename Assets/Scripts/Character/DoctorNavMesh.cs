@@ -26,7 +26,7 @@ public class DoctorNavMesh : MonoBehaviour
             SetDestinationToMousePosition();
         }
         float distance = Vector3.Distance(transform.position, posTransform);
-        if(distance <= maxDistance)
+        if (distance <= maxDistance)
         {
             isMove = false;
         } else
@@ -40,7 +40,14 @@ public class DoctorNavMesh : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, _interactableLayerMask))
         {
-            posTransform = hit.transform.GetChild(0).position;
+            foreach (Transform child in hit.transform)
+            {
+                if (child.name == "CheckPoint")
+                {
+                    posTransform = child.position;
+                    break;
+                }
+            }
             _myNavMeshAgent.SetDestination(posTransform);
         }
     }
