@@ -25,6 +25,7 @@ public class ObjectsScripter : MonoBehaviour
         {
             if (_time + _nextCall < Time.time)
             {
+                audioPhone.playing = true;
                 audioPhone.PlayMusic();
                 musicManager.StopMusic();
                 phone.enabled = true;

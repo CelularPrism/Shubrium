@@ -14,6 +14,7 @@ public class DialogScripter : MonoBehaviour
     private List<DialogInterface> dialogInterfaces;
     private ObjectsScripter objectsScripter;
     private DialogManager dialogManager;
+    private bool _phoneActive = false;
 
     private void Start()
     {
@@ -31,6 +32,12 @@ public class DialogScripter : MonoBehaviour
     {
         if (!dialogManager.isActive)
         {
+            if (_phoneActive)
+            {
+                _phoneActive = false;
+                phone.PutDown();
+            }
+
             if (!phone.enabled)
                 objectsScripter.isActive = true;
             doctorNav.enabled = true;
@@ -62,6 +69,7 @@ public class DialogScripter : MonoBehaviour
             dialogManager.SetDialog(dialog);
 
             dialogInterfaces.Remove(dialog);
+            _phoneActive = true;
         }
     }
 }

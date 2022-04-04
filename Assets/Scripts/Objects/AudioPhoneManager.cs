@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class AudioPhoneManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource playerSrc;
+    public bool playing;
+
+    [SerializeField] private MusicManager musicManager;
+    [SerializeField] private AudioSource musicSrc;
+    [SerializeField] private AudioSource soundSrc;
     [SerializeField] private AudioClip[] phoneState;
     [SerializeField] private AudioClip[] psychoRings;
 
@@ -12,29 +16,35 @@ public class AudioPhoneManager : MonoBehaviour
 
     public void Update()
     {
-        if (!playerSrc.isPlaying)
-            playerSrc.Play();
+        if (!musicSrc.isPlaying && playing)
+            musicSrc.Play();
     }
 
     public void PickUp()
     {
-        playerSrc.loop = false;
-        playerSrc.clip = phoneState[0];
-        playerSrc.Play();
+        playing = false;
+        musicSrc.Stop();
+
+        soundSrc.loop = false;
+        soundSrc.clip = phoneState[0];
+        soundSrc.Play();
     }
 
     public void PutDown()
     {
-        playerSrc.loop = false;
-        playerSrc.clip = phoneState[1];
-        playerSrc.Play();
+        playing = false;
+        soundSrc.loop = false;
+        soundSrc.clip = phoneState[1];
+        soundSrc.Play();
+
+        musicManager.SetAudioClip();
     }
 
     public void PlayMusic()
     {
-        playerSrc.loop = true;
-        playerSrc.clip = psychoRings[index];
-        playerSrc.Play();
+        musicSrc.loop = true;
+        musicSrc.clip = psychoRings[index];
+        musicSrc.Play();
     }
 
     public void SetNextPsychoRing()

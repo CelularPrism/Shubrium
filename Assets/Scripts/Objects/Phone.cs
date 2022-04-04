@@ -21,4 +21,9 @@ public class Phone : Objects
             isActive = false;
         }
     }
+
+    public void PutDown()
+    {
+        audioPhoneManager.PutDown();
+    }
 }
