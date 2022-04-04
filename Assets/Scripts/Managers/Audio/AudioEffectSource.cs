@@ -6,7 +6,7 @@ public class AudioEffectSource : MonoBehaviour
 {
     private Dictionary<string, AudioClip> _audioEffectClips = new Dictionary<string, AudioClip>();
 
-    private AudioManager _audioManager;
+    //private AudioManager _audioManager;
 
     private AudioSource _audioSource;
     private void Awake()
@@ -21,8 +21,8 @@ public class AudioEffectSource : MonoBehaviour
 
     private void Start()
     {
-        _audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        _audioManager.PlayAudio(_audioEffectClips["Effect1"], _audioSource);
+        //_audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        //_audioManager.PlayAudio(_audioEffectClips["Effect1"], _audioSource);
     }
     private void Update()
     {

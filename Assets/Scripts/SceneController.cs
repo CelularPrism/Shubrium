@@ -6,10 +6,10 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] private PsychoController psychoController;
     [SerializeField] private ObjectsScripter objectsScripter;
-    [SerializeField] private DoctorNavMesh doctorNavMesh;
+    //[SerializeField] private DoctorNavMesh doctorNavMesh;
     [SerializeField] private UIScripter uiScripter;
     [SerializeField] private MusicManager musicManager;
-    [SerializeField] private MusicScriptManager scriptMusic;
+    //[SerializeField] private MusicScriptManager scriptMusic;
 
     private float time;
     private void Start()
@@ -23,7 +23,7 @@ public class SceneController : MonoBehaviour
         {
             psychoController.enabled = false;
             objectsScripter.isActive = false;
-            doctorNavMesh.enabled = false;
+            //doctorNavMesh.enabled = false;
 
             musicManager.StopMusic();
             musicManager.EndGame();

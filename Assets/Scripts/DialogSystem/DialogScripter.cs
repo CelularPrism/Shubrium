@@ -8,7 +8,7 @@ public class DialogScripter : MonoBehaviour
 {
     [SerializeField] private GameObject dialogGameObject;
     [SerializeField] private GameObject dialogChangerGameObject;
-    [SerializeField] private DoctorNavMesh doctorNav;
+    //[SerializeField] private DoctorNavMesh doctorNav;
     [SerializeField] private Phone phone;
 
     private List<DialogInterface> dialogInterfaces;
@@ -44,10 +44,10 @@ public class DialogScripter : MonoBehaviour
 
             if (!phone.enabled)
                 objectsScripter.isActive = true;
-            doctorNav.enabled = true;
+            //doctorNav.enabled = true;
         } else
         {
-            doctorNav.enabled = false;
+            //doctorNav.enabled = false;
         }
     }
 
