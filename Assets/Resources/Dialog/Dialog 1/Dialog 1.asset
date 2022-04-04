@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 1
+  m_EditorClassIdentifier: 
+  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
+    on it\u2026"
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 17cee7c40a79b8b4694ffff2ddcb4cf7, type: 2}
+  - {fileID: 11400000, guid: c752275cf0882ea48adcaff2785a8240, type: 2}
+  - {fileID: 11400000, guid: c8e5ee7f8e7638e42a55b9cdf87a81c7, type: 2}
+  - {fileID: 11400000, guid: 1d2e8fd66fcaba44b9b1b442da55a4df, type: 2}
+  dialog: {fileID: 0}

@@ -19,6 +19,9 @@ public class SceneController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
         if (!psychoController.isLive && objectsScripter.isActive)
         {
             psychoController.enabled = false;
