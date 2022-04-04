@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 22
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hello, Mr. Psychologist? The cashier in the shop told me that I could pay
+    with different cards, but when I pulled my Joker out, they refused to take it.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f6ac32135b628f343baf2da5ad170ede, type: 2}
+  - {fileID: 11400000, guid: f680eec92162ebb4290452f55332a41d, type: 2}
+  - {fileID: 11400000, guid: 1c933a72ca9c01d4da37e106e103b535, type: 2}
+  - {fileID: 11400000, guid: 883477818eb153a4d94f75114cc57ec7, type: 2}
   dialog: {fileID: 0}

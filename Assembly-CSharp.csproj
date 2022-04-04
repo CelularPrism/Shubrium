@@ -74,10 +74,10 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogManager.cs" />
     <Compile Include="Assets\Scripts\PsychoController.cs" />
     <Compile Include="Assets\Scripts\Character\DoctorNavMesh.cs" />
-    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\DialogTwo.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog2.cs" />
     <Compile Include="Assets\Scripts\MusicScriptManager.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectsManager.cs" />
-    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\DialogOne.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog1.cs" />
     <Compile Include="Assets\Scripts\PsychoScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioMusicSource.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioManager.cs" />
@@ -89,6 +89,34 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\SODialog.cs" />
     <Compile Include="Assets\Scripts\StatesImageManager.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog3.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog4.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog5.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog6.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog7.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog8.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog9.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog10.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog11.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog12.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog13.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog14.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog15.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog16.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog17.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog18.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog19.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog20.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog21.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog22.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog23.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog24.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog25.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog26.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog27.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog28.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog29.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog30.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />
@@ -315,6 +343,15 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.11\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.11\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.11\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\2020.3.19f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -667,8 +704,17 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\2020.3.19f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -676,14 +722,20 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -694,8 +746,47 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Analytics">
+      <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

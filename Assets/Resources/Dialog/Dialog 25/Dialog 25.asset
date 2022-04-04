@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 25
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hello, Mr. Psychologist. I was taking the trash out, but my neighbour was
+    very angry about it. It is so strange, I always threw it out of the window.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 2d02ca519d23f5141844d98adfc39a88, type: 2}
+  - {fileID: 11400000, guid: b4524a324fd80ba4d94b99b449701e69, type: 2}
+  - {fileID: 11400000, guid: 8dc3dd6dcdf816c40a28eac1b7e6aa1c, type: 2}
+  - {fileID: 11400000, guid: ddd750ea7746bb042a1b452bfdc91515, type: 2}
   dialog: {fileID: 0}

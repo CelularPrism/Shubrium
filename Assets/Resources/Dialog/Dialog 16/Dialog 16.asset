@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 16
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: "Hello, Mister Psychologist? I bought myself new flagship phone, but when
+    I tried to put it in the water it sank and doesn\u2019t work anymore. Why are
+    they refusing to give me my money back?"
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e852a7062f543714587544e951fe73c0, type: 2}
+  - {fileID: 11400000, guid: ba7a989b156f5894f837482886b0fd2b, type: 2}
+  - {fileID: 11400000, guid: 493be4a0e8ad11f4698ccfd1c401b99e, type: 2}
+  - {fileID: 11400000, guid: 9847adcbbdd4b044a8bf3d832b254080, type: 2}
   dialog: {fileID: 0}

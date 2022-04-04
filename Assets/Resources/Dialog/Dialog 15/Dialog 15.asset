@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 15
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hi, doctor? I was on a date with a woman and she said that I was very hot,
+    I immediately called an ambulance, but they are refusing to take me.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: aa31cc05808b5b64c91590fd3c6c46a6, type: 2}
+  - {fileID: 11400000, guid: 3e3806fb343acee41a0927839fbeb3b2, type: 2}
+  - {fileID: 11400000, guid: ebbea01f7a1dd5847b501d9aa54e4164, type: 2}
+  - {fileID: 11400000, guid: 5173010447a9ef040b86ac052d8b6c8a, type: 2}
   dialog: {fileID: 0}

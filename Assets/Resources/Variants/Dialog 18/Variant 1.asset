@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73cc089a9bf996c4ca5697f3de651f11, type: 3}
   m_Name: Variant 1
   m_EditorClassIdentifier: 
-  text: 
-  psycho: 0
+  text: Encouraging
+  psycho: -1
   fatigue: 0
-  dialog: {fileID: 0}
+  dialog: {fileID: 11400000, guid: 2a0500e9e2f36314b858c310c5420e70, type: 2}

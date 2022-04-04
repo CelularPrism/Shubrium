@@ -28,12 +28,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -90,55 +84,55 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1436}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 14216}
+      Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 14444}
+      Script: {instanceID: 1862}
     - Class: 114
-      Script: {instanceID: 14676}
+      Script: {instanceID: 2096}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 14864}
+      Script: {instanceID: 2288}
     - Class: 114
-      Script: {instanceID: 15268}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 15420}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 15586}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 15668}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 15678}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 15710}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 15876}
+      Script: {instanceID: 3314}
     - Class: 114
-      Script: {instanceID: 15902}
+      Script: {instanceID: 3340}
     - Class: 114
-      Script: {instanceID: 16024}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 16032}
+      Script: {instanceID: 3478}
     - Class: 114
-      Script: {instanceID: 16150}
+      Script: {instanceID: 3596}
     - Class: 114
-      Script: {instanceID: 16166}
+      Script: {instanceID: 3612}
     - Class: 114
-      Script: {instanceID: 16244}
+      Script: {instanceID: 3692}
     - Class: 114
-      Script: {instanceID: 17316}
+      Script: {instanceID: 4790}
     - Class: 114
-      Script: {instanceID: 17364}
+      Script: {instanceID: 4838}
     - Class: 114
-      Script: {instanceID: 17912}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 17990}
+      Script: {instanceID: 5474}
     - Class: 114
-      Script: {instanceID: 18046}
+      Script: {instanceID: 5532}
     - Class: 114
-      Script: {instanceID: 18084}
+      Script: {instanceID: 5572}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -855,4 +849,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Scene.unity
-  playerPath: C:/Builds/PC/Shubrium_2/Shubrium.exe
+  playerPath: C:/Builds/PC/Shubrium_4/Shubrium.exe

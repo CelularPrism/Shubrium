@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 21
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: "Hello, Doctor. I went to the restaurant today and wanted to heat up my steak
+    in their kitchen, but chef didn\u2019t allow me to do that, why is he so greedy?"
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6136feda88f891a4a8521afd7bda2210, type: 2}
+  - {fileID: 11400000, guid: 62c9f2910271ed148b9652fb302c35f4, type: 2}
+  - {fileID: 11400000, guid: cdc55fa19327def44b020cc42b7addfe, type: 2}
+  - {fileID: 11400000, guid: 47771d4afd2edd6439fdeb116c6ec09c, type: 2}
   dialog: {fileID: 0}

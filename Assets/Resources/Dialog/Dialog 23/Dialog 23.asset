@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 23
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hi, Mr. Psychologist? I was donating my blood for charity today. But I changed
+    my mind and asked them to put it back into me, but they said it is not allowed.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: a4a90aa4b9b92e04a930cdecc6d7462e, type: 2}
+  - {fileID: 11400000, guid: 23e894b6b6d74664b80b949565ae9eeb, type: 2}
+  - {fileID: 11400000, guid: de9d738e121cc8641a4906cb4805a503, type: 2}
+  - {fileID: 11400000, guid: 75d92fbae0a28b84284e301e7679a78b, type: 2}
   dialog: {fileID: 0}

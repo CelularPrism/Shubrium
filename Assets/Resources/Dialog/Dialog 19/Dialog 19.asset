@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 19
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hello, Doctor? They were giving away free cheese in the shop, but when I
+    took the whole plate, security kicked me out.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: d2015ee4b3ef4fa42834a42365d619be, type: 2}
+  - {fileID: 11400000, guid: f84e634fcdbe60e44af7f1f2b32bccd7, type: 2}
+  - {fileID: 11400000, guid: c5df47eb588fe584eb9b21ca5955f9dd, type: 2}
+  - {fileID: 11400000, guid: 992cc8e5e21e505458043d8ecb4b9593, type: 2}
   dialog: {fileID: 0}

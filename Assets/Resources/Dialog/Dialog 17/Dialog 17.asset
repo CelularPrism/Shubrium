@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 17
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hello, Mr. Psychologist? I wanted to have a vacation, but they refused to
+    board me on a flight with my TV. What am I supposed to watch then?
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0c560944bfeb0e44f9c184485598e50b, type: 2}
+  - {fileID: 11400000, guid: 40c95f26f2b1ac3479b28502ae29da02, type: 2}
+  - {fileID: 11400000, guid: 7ac4b018faca7c149a75d190332c1a9b, type: 2}
+  - {fileID: 11400000, guid: d150f5828bf15434696792bffd9d7f31, type: 2}
   dialog: {fileID: 0}

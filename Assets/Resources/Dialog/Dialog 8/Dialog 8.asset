@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 8
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Mr Psychologist? I think i just developed a new insecurity. A dog i met today
+    told me i looked ugly.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: ed468c423f9ecab48b1b0663b0766776, type: 2}
+  - {fileID: 11400000, guid: 3f9ce9366ccadab45a64bb4ad080116d, type: 2}
+  - {fileID: 11400000, guid: 09766cdbbf2641041930ab471116bcbd, type: 2}
+  - {fileID: 11400000, guid: 8b71a049c5280e74badb54c072d6196c, type: 2}
   dialog: {fileID: 0}

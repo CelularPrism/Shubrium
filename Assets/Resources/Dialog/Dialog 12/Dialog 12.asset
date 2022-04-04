@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 12
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: "Hi, Mr. Psycholoigst. My office was very uncomfortable and stuffy, so I
+    decided to move to another one. It\u2019s very nice, but my boss, to whom this
+    office belongs to, is very angry for some reason."
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 801c9d96907bfe94e876765933b23067, type: 2}
+  - {fileID: 11400000, guid: 4dfd4be41742400459c29666f2764dd5, type: 2}
+  - {fileID: 11400000, guid: ae548d88dd0d5424d812c3904f1d084c, type: 2}
+  - {fileID: 11400000, guid: 9dbfe92295e37af4f83cba34fe03ceb8, type: 2}
   dialog: {fileID: 0}

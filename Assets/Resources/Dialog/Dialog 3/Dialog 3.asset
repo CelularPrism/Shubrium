@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 3
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: "Whos here? there seems to be three of us\u2026 why are you listening in?
+    Alright then, let them know i will not mention where he is."
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f670e0d11b606934e9d6f6b4de27257a, type: 2}
+  - {fileID: 11400000, guid: 85c0dc05c8fe710449ae4409da23f715, type: 2}
+  - {fileID: 11400000, guid: 4a96872090c6cc94aac22563c4ee1843, type: 2}
+  - {fileID: 11400000, guid: efc15ec8d57741f49bb81e80f6322a88, type: 2}
   dialog: {fileID: 0}

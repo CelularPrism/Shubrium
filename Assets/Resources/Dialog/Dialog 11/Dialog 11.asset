@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 11
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Hi, Mr. Psychologist. Some thug just stole my wallet. Now my financial status
+    is awful and I am going to steal money from someone else to make it better.
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 27324a196d662ab4fa1d208edabb831b, type: 2}
+  - {fileID: 11400000, guid: bedc67295948f8c41ad462447f81ff18, type: 2}
+  - {fileID: 11400000, guid: 32fcb9e5648e32f488c2a383d409c7f6, type: 2}
+  - {fileID: 11400000, guid: 16a161227036958479e2d03b6d944557, type: 2}
   dialog: {fileID: 0}

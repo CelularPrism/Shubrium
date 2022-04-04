@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
   m_Name: Dialog 6
   m_EditorClassIdentifier: 
-  text: "Hello? Mr Phsycologist? I-I crashed a car and left your name and address
-    on it\u2026"
-  haveVariants: 0
+  text: Mr Psychologist? I made a bit of a Freudian slip yesterday. What i wanted
+    to tell my wife was "My dear, could you please pour me a cup of coffee?" but
+    instead i happened to say "you ruined my whole damn life you worthless jerk!"
+  haveVariants: 1
   variants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: edd7ba5bfe7f6af44a6ae5b00fe73f01, type: 2}
+  - {fileID: 11400000, guid: e0987edcfd2a74740a03f2b088c9da3c, type: 2}
+  - {fileID: 11400000, guid: 084a5218979a43143910c3d81fda75f2, type: 2}
+  - {fileID: 11400000, guid: b4d1c200022e746459ee2897ddf29a8f, type: 2}
   dialog: {fileID: 0}
