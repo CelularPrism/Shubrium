@@ -77,6 +77,7 @@ public class DialogScripter : MonoBehaviour
         } else
         {
             SetDialogList();
+            SetNewDialog();
         }
     }
 }

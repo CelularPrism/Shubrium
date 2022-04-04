@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PsychoController : MonoBehaviour
 {
+    public bool isLive = true;
+
     [SerializeField] private float psychoChanger;
 
     [SerializeField] private float[] psychoState;
@@ -71,7 +73,10 @@ public class PsychoController : MonoBehaviour
         if (nowPsycho < 0)
             nowPsycho = 0;
         else if (nowPsycho > psychoState[psychoState.Length - 1])
+        {
             nowPsycho = psychoState[psychoState.Length - 1];
+            isLive = false;
+        }
     }
 
     public void ChangeFatigue(float fatigue)

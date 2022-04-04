@@ -15,11 +15,16 @@ public class Phone : Objects
             if (this.enabled)
             {
                 dialogScripter.SetNewDialog();
-                audioPhoneManager.PickUp();
+                PickUp();
+                this.enabled = false;
             }
-            //this.enabled = false;
             isActive = false;
         }
+    }
+
+    public void PickUp()
+    {
+        audioPhoneManager.PickUp();
     }
 
     public void PutDown()

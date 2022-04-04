@@ -25,11 +25,11 @@ public class ObjectsScripter : MonoBehaviour
         {
             if (_time + _nextCall < Time.time)
             {
+                isActive = false;
                 audioPhone.playing = true;
                 audioPhone.PlayMusic();
                 musicManager.StopMusic();
                 phone.enabled = true;
-                isActive = false;
             } else
             {
                 phone.enabled = false;

@@ -36,11 +36,12 @@ public class TextDialogChanger : MonoBehaviour
 
     public bool CheckNowText()
     {
-        if (textField.text == oldText)
+        string text = textField.text.Substring(2);
+        if (text == oldText)
             return true;
         else
         {
-            textField.text = oldText;
+            textField.text = "- " + oldText;
             indexText = oldText.Length - 1;
         }
         return false;

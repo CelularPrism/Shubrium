@@ -6,13 +6,15 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSrc;
     [SerializeField] private AudioClip[] audioPsycho;
+    [SerializeField] private AudioClip endGameAudio;
 
     private int nowIndexAudio;
     private int nextIndexAudio;
+    private bool _endGame = false;
 
     private void FixedUpdate()
     {
-        if (nowIndexAudio != nextIndexAudio)
+        if (nowIndexAudio != nextIndexAudio && !_endGame)
         {
             Invoke("SetAudioClip", musicSrc.clip.length - musicSrc.time);
         }
@@ -33,6 +35,14 @@ public class MusicManager : MonoBehaviour
     public void StopMusic()
     {
         musicSrc.Stop();
+    }
+
+    public void EndGame()
+    {
+        _endGame = true;
+        musicSrc.clip = endGameAudio;
+        musicSrc.loop = true;
+        PlayMusic();
     }
 
     public void SetAudioClip(AudioClip audioClip = null)

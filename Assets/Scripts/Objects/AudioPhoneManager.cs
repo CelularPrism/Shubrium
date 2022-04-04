@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioPhoneManager : MonoBehaviour
 {
-    public bool playing;
+    public bool playing = false;
 
     [SerializeField] private MusicManager musicManager;
     [SerializeField] private AudioSource musicSrc;
@@ -14,7 +14,7 @@ public class AudioPhoneManager : MonoBehaviour
 
     private int index = 0;
 
-    public void Update()
+    private void Update()
     {
         if (!musicSrc.isPlaying && playing)
             musicSrc.Play();

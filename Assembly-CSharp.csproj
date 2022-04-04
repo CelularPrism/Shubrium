@@ -80,8 +80,13 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SODialog.cs" />
-    <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
     <Compile Include="Assets\Scripts\StatesImageManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
+    <Compile Include="Assets\Scripts\PsychoScripter.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Scripts\UIScripter.cs" />
+    <Compile Include="Assets\Scripts\MusicScriptManager.cs" />
+    <Compile Include="Assets\Scripts\TextChangerScripter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />
