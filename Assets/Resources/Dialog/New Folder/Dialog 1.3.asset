@@ -15,4 +15,4 @@ MonoBehaviour:
   text: Dialog 1.4
   haveVariants: 0
   variants: []
-  dialog: {fileID: 0}
+  dialog: {fileID: 11400000, guid: c1a5bedcd0103994aa01140117c5778f, type: 2}

@@ -6,7 +6,7 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] private PsychoController psychoController;
     [SerializeField] private ObjectsScripter objectsScripter;
-    //[SerializeField] private DoctorNavMesh doctorNavMesh;
+    [SerializeField] private DialogScripter dialogScripter;
     [SerializeField] private UIScripter uiScripter;
     [SerializeField] private MusicManager musicManager;
     //[SerializeField] private MusicScriptManager scriptMusic;
@@ -19,10 +19,11 @@ public class SceneController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!psychoController.isLive)
+        if (!psychoController.isLive && objectsScripter.isActive)
         {
             psychoController.enabled = false;
             objectsScripter.isActive = false;
+            dialogScripter.enabled = false;
             //doctorNavMesh.enabled = false;
 
             musicManager.StopMusic();

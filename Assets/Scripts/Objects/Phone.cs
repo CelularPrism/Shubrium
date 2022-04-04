@@ -14,21 +14,22 @@ public class Phone : Objects
         {
             if (this.enabled)
             {
-                dialogScripter.SetNewDialog();
-                PickUp();
-                this.enabled = false;
+                /*Debug.Log(true);
+                PickUp();*/
             }
-            isActive = false;
         }
     }
 
     public void PickUp()
     {
-        audioPhoneManager.PickUp();
+        dialogScripter.SetNewDialog();
+        //audioPhoneManager.PickUp();
+        this.enabled = false;
+        isActive = false;
     }
 
     public void PutDown()
     {
-        audioPhoneManager.PutDown();
+        //audioPhoneManager.PutDown();
     }
 }

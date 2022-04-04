@@ -52,7 +52,7 @@ public class PsychoController : MonoBehaviour
         if (nowPsycho > psychoState[indexNextPsycho])
         {
             musicManager.SetNextAudio();
-            //statesImageManager.SetNextState();
+            statesImageManager.SetNextState();
             if (indexNextPsycho < psychoState.Length - 1)
             {
                 indexNextPsycho++;
@@ -63,7 +63,7 @@ public class PsychoController : MonoBehaviour
         else if (nowPsycho < psychoState[indexPrevPsycho])
         {
             musicManager.SetPrevAudio();
-            //statesImageManager.SetPrevState();
+            statesImageManager.SetPrevState();
             if (indexPrevPsycho > 0)
                 indexPrevPsycho--;
 

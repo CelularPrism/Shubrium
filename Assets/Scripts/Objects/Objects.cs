@@ -24,7 +24,7 @@ public abstract class Objects : MonoBehaviour, ObjectsInterface
 
     public void OnMouseDown()
     {
-        isActive = true;
+        //isActive = true;
         //if (this.enabled)
             //_currentDistance = Vector3.Distance(_mainCharacterTransform.transform.position, _objectTransform.transform.position);
         //objectsManager.DisableActive(this);

@@ -15,4 +15,4 @@ MonoBehaviour:
   text: "\u041F\u043E\u0448\u0435\u043B \u043D\u0430\u0444\u0438\u0433"
   haveVariants: 0
   variants: []
-  dialog: {fileID: 0}
+  dialog: {fileID: 11400000, guid: 9b7ea6f194c8be240b2785eed6b3407a, type: 2}

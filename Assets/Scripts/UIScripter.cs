@@ -8,6 +8,8 @@ public class UIScripter : MonoBehaviour
     [SerializeField] private GameObject startPanel;
     [SerializeField] private GameObject endPanel;
     [SerializeField] private TextChangerScripter textChanger;
+    [SerializeField] private ObjectsScripter objectsScripter;
+    [SerializeField] private DialogScripter dialogScripter;
 
     private GameObject nowPanel;
 
@@ -26,6 +28,8 @@ public class UIScripter : MonoBehaviour
             }
             else
             {
+                dialogScripter.enabled = true;
+                objectsScripter.isActive = true;
                 nowPanel.SetActive(false);
                 nowPanel = null;
             }

@@ -10,12 +10,12 @@ public class ObjectsScripter : MonoBehaviour
 
     public bool isActive = false;
 
-    private float _nextCall;
+    private int _nextCall;
     private float _time;
 
     private void Start()
     {
-        _nextCall = Random.Range(5f, 10f);
+        _nextCall = Random.Range(5, 10);
         _time = Time.time;
     }
 
@@ -30,6 +30,7 @@ public class ObjectsScripter : MonoBehaviour
                 audioPhone.PlayMusic();
                 musicManager.StopMusic();
                 phone.enabled = true;
+                phone.isActive = true;
             } else
             {
                 phone.enabled = false;
@@ -37,7 +38,7 @@ public class ObjectsScripter : MonoBehaviour
         } else
         {
             _time = Time.time;
-            _nextCall = Random.Range(30f, 60f);
+            _nextCall = Random.Range(5, 10);
         }
     }
 }

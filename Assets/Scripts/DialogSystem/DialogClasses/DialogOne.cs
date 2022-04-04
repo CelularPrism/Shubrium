@@ -12,7 +12,7 @@ public class DialogOne : DialogInterface
     {
         if (dialog == null)
         {
-            dialog = Resources.Load<SODialog>("Dialog/New Folder/Dialog 1.1");
+            dialog = Resources.Load<SODialog>("Dialog/New Folder/Dialog 1");
         }
         return dialog;
     }

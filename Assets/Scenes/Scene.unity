@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074002, b: 0.35872707, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: fd71c010b88deeb4596e3309bc72470b, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 2829efc5c51565f438ab3d22ff015f68, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -913,7 +913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thanks for playing
+  m_Text: 
 --- !u!222 &849279165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1622,11 +1622,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 546bd28d2846ac74091aa00c661b91b3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1792,7 +1792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: END GAME
+  m_Text: 
 --- !u!222 &1360121782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1914,8 +1914,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8dd772ae8f9a94b81237d072e3086e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageState: {fileID: 0}
-  spritesState: []
+  imageState: {fileID: 248876867}
+  spritesState:
+  - {fileID: 21300000, guid: 896fb4d3177078244985a7092b89d623, type: 3}
+  - {fileID: 21300000, guid: 1774f522af660a8449af834536282798, type: 3}
+  - {fileID: 21300000, guid: 72aea91c939abfd4289e5a4517bf3071, type: 3}
+  - {fileID: 21300000, guid: 622f19e10f82aca40997ecd5715f0044, type: 3}
 --- !u!1001 &1429506136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1923,6 +1927,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1978105447571865680, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
+      propertyPath: _phone
+      value: 
+      objectReference: {fileID: 7060611357604530114}
+    - target: {fileID: 1978105447571865680, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
+      propertyPath: _audioManager
+      value: 
+      objectReference: {fileID: 7060611357604530113}
     - target: {fileID: 3915211677078069972, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
       propertyPath: m_Name
       value: DoctorSitting
@@ -2353,6 +2365,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754805223}
   m_CullTransparentMesh: 1
+--- !u!114 &1782793910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1978105447571865680, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
+  m_PrefabInstance: {fileID: 1429506136}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e8638289b1906439c6b8f9dd5284fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1812392126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +2980,8 @@ MonoBehaviour:
   startPanel: {fileID: 1734132855}
   endPanel: {fileID: 480325178}
   textChanger: {fileID: 2018043174}
+  objectsScripter: {fileID: 2018043171}
+  dialogScripter: {fileID: 2018043172}
 --- !u!114 &2018043169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3024,13 +3049,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018043163}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f138005020af5b14890f7933c4b04aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogGameObject: {fileID: 1195733946}
   dialogChangerGameObject: {fileID: 868484214}
+  doctorAnimator: {fileID: 1782793910}
   phone: {fileID: 7060611357604530114}
 --- !u!114 &2018043173
 MonoBehaviour:
@@ -3046,6 +3072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   psychoController: {fileID: 2018043169}
   objectsScripter: {fileID: 2018043171}
+  dialogScripter: {fileID: 2018043172}
   uiScripter: {fileID: 2018043168}
   musicManager: {fileID: 2018043170}
 --- !u!114 &2018043174
@@ -3218,6 +3245,10 @@ PrefabInstance:
       propertyPath: audioPhoneManager
       value: 
       objectReference: {fileID: 7060611357604530113}
+    - target: {fileID: 7060611355638832603, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+      propertyPath: _dialogScriptAllowed
+      value: 
+      objectReference: {fileID: 7060611357604530114}
     - target: {fileID: 7383350202064028444, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
       propertyPath: m_RootOrder
       value: 3

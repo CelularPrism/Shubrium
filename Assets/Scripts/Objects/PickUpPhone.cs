@@ -9,7 +9,7 @@ public class PickUpPhone : MonoBehaviour
 
     private DoctorAnimator _doctorAnim;
 
-    [SerializeField] private bool _dialogScriptAllowed = true; //Здесь ссылка на скрипт (заменить string на тип скрипта), который вызывает начало диалога;
+    [SerializeField] private Phone _dialogScriptAllowed; //Здесь ссылка на скрипт (заменить string на тип скрипта), который вызывает начало диалога;
 
     private void Awake()
     {
@@ -29,7 +29,7 @@ public class PickUpPhone : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if (_dialogScriptAllowed)
+        if (_dialogScriptAllowed.isActive)
         {
             _doctorAnim.StartDialog();
         }
