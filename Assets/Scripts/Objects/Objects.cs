@@ -34,6 +34,11 @@ public abstract class Objects : MonoBehaviour, ObjectsInterface
     {
 
     }
+
+    public Vector3 GetPoint()
+    {
+        return new Vector3();
+    }
     /*public void Update()
     {
         if (isActive)

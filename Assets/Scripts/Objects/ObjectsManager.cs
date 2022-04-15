@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectsManager : MonoBehaviour
 {
     [SerializeField] private Transform[] objectsTrans;
+    [SerializeField] private PlayerMovement playerMovement;
     public void DisableActive(ObjectsInterface objectInterface)
     {
         foreach (Transform trans in objectsTrans)
@@ -14,6 +15,9 @@ public class ObjectsManager : MonoBehaviour
             {
                 objects.isActive = false;
                 //Debug.Log(trans.name + " " + false);
+            } else
+            {
+                playerMovement.SetPoint(objects.GetPoint());
             }
         }
     } 
