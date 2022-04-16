@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 8765062102200439309}
   - component: {fileID: 1978105447571865680}
   - component: {fileID: 7905715377864641012}
-  - component: {fileID: 874166434}
+  - component: {fileID: 8944876742336987021}
   m_Layer: 0
   m_Name: DoctorSitting
   m_TagString: Untagged
@@ -723,7 +723,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &874166434
+--- !u!114 &8944876742336987021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,10 +732,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3915211677078069972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf58916e8e56b44dab4471ae787bc8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fa9cad74e0b63145ad2078b5e511dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 0
+  speed: 1
   isMove: 0
 --- !u!1 &4147303922532224836
 GameObject:

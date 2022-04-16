@@ -36,7 +36,7 @@ public abstract class Objects : MonoBehaviour, ObjectsInterface
 
     public Vector3 GetPoint()
     {
-        return new Vector3();
+        return transform.position;
     }
     /*public void Update()
     {

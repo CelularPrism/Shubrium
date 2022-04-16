@@ -17,6 +17,7 @@ public class ObjectsManager : MonoBehaviour
                 //Debug.Log(trans.name + " " + false);
             } else
             {
+                Debug.Log(objects.GetPoint());
                 playerMovement.SetPoint(objects.GetPoint());
             }
         }

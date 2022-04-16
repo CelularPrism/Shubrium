@@ -18,11 +18,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isMove)
         {
-            if (transform.position.x != _point.x)
+            if (transform.position.z != _point.z)
             {
-                float posX = Vector3.MoveTowards(transform.position, _point, speed).x;
+                float pos = Vector3.MoveTowards(transform.position, _point, speed).z;
 
-                transform.position = new Vector3(posX, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y, pos);
             } 
             else
             {

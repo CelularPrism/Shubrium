@@ -119,6 +119,8 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog24.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog30.cs" />
+    <Compile Include="Assets\Scripts\UI MiniGame\UIMovement.cs" />
+    <Compile Include="Assets\Scripts\UI MiniGame\UIMovementManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />
