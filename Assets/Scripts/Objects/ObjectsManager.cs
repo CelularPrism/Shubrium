@@ -13,13 +13,31 @@ public class ObjectsManager : MonoBehaviour
             ObjectsInterface objects = trans.GetComponent<ObjectsInterface>();
             if (objects != objectInterface)
             {
-                objects.isActive = false;
+                objects._isActive = false;
                 //Debug.Log(trans.name + " " + false);
             } else
             {
-                Debug.Log(objects.GetPoint());
+                //Debug.Log(objects.GetPoint());
                 playerMovement.SetPoint(objects.GetPoint());
             }
         }
-    } 
+    }
+
+    public void EnabledObjects()
+    {
+        ObjectsInterface[] objects = transform.GetComponentsInChildren<ObjectsInterface>();
+        foreach (ObjectsInterface obj in objects)
+        {
+            obj._isEnabled = true;
+        }
+    }
+
+    public void DisabledObjects()
+    {
+        ObjectsInterface[] objects = transform.GetComponentsInChildren<ObjectsInterface>();
+        foreach (ObjectsInterface obj in objects)
+        {
+            obj._isEnabled = false;
+        }
+    }
 }

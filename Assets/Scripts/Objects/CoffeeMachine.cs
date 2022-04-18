@@ -19,22 +19,27 @@ public class CoffeeMachine : Objects
     }
     public void OnMouseEnter()
     {
-        _coffeeMachineLight.enabled = true;
-        _coffeeMachineRender.material.color = _newCoffeeMachineColor;
+        if (_isEnabled)
+        {
+            _coffeeMachineLight.enabled = true;
+            _coffeeMachineRender.material.color = _newCoffeeMachineColor;
+        }
     }
     public void OnMouseExit()
     {
-        _coffeeMachineLight.enabled = false;
-        _coffeeMachineRender.material.color = _defaultCoffeeMachineColor;
-    }
+        if (_isEnabled)
+        {
+            _coffeeMachineLight.enabled = false;
+            _coffeeMachineRender.material.color = _defaultCoffeeMachineColor;
+        }    }
     public override void OnTriggerEnter(Collider other)
     {
-        base.OnTriggerEnter(other);
-
-        if (isActive && other.name == "Doctor")
+        if (_isEnabled)
         {
-            //Debug.Log("This is coffeeemachine");
-            isActive = false;
-        }
+            base.OnTriggerEnter(other);
+            if (_isActive && other.name == "Doctor")
+            {
+                _isActive = false;
+            }        }
     }
 }

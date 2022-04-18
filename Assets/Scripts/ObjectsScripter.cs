@@ -28,9 +28,9 @@ public class ObjectsScripter : MonoBehaviour
                 isActive = false;
                 audioPhone.playing = true;
                 audioPhone.PlayMusic();
-                musicManager.StopMusic();
+                //musicManager.StopMusic();
                 phone.enabled = true;
-                phone.isActive = true;
+                phone._isActive = true;
             } else
             {
                 phone.enabled = false;

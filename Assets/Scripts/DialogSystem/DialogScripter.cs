@@ -9,6 +9,7 @@ public class DialogScripter : MonoBehaviour
     [SerializeField] private GameObject dialogGameObject;
     [SerializeField] private GameObject dialogChangerGameObject;
     [SerializeField] private DoctorAnimator doctorAnimator;
+    [SerializeField] private ObjectsManager objectsManager;
     [SerializeField] private Phone phone;
 
     private List<DialogInterface> dialogInterfaces;
@@ -44,14 +45,20 @@ public class DialogScripter : MonoBehaviour
             }
 
             if (!phone.enabled)
+            {
+                objectsManager.EnabledObjects();
                 objectsScripter.isActive = true;
+            }
         }
     }
 
     public void SetNewDialog()
     {
+
         if (dialogInterfaces.Count > 0)
         {
+            objectsManager.DisabledObjects();
+
             int random = Random.Range(0, dialogInterfaces.Count);
             DialogInterface dialog = dialogInterfaces[random];
 

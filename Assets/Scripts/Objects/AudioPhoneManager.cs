@@ -6,8 +6,8 @@ public class AudioPhoneManager : MonoBehaviour
 {
     public bool playing = false;
 
-    [SerializeField] private MusicManager musicManager;
-    [SerializeField] private AudioSource musicSrc;
+    //[SerializeField] private MusicManager musicManager;
+    //[SerializeField] private AudioSource musicSrc;
     [SerializeField] private AudioSource soundSrc;
     [SerializeField] private AudioClip[] phoneState;
     [SerializeField] private AudioClip[] psychoRings;
@@ -16,14 +16,14 @@ public class AudioPhoneManager : MonoBehaviour
 
     private void Update()
     {
-        if (!musicSrc.isPlaying && playing)
-            musicSrc.Play();
+        if (!soundSrc.isPlaying && playing)
+            soundSrc.Play();
     }
 
     public void PickUp()
     {
         playing = false;
-        musicSrc.Stop();
+        //musicSrc.Stop();
 
         soundSrc.loop = false;
         soundSrc.clip = phoneState[0];
@@ -37,14 +37,14 @@ public class AudioPhoneManager : MonoBehaviour
         soundSrc.clip = phoneState[1];
         soundSrc.Play();
 
-        musicManager.SetAudioClip();
+        //musicManager.SetAudioClip();
     }
 
     public void PlayMusic()
     {
-        musicSrc.loop = true;
-        musicSrc.clip = psychoRings[index];
-        musicSrc.Play();
+        soundSrc.loop = true;
+        soundSrc.clip = psychoRings[index];
+        soundSrc.Play();
     }
 
     public void SetNextPsychoRing()

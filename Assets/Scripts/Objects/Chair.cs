@@ -20,22 +20,31 @@ public class Chair : Objects
     }
     public void OnMouseEnter()
     {
-        _chairLight.enabled = true;
-        _chairRender.material.color = _newChairColor;
+        if (_isEnabled)
+        {
+            _chairLight.enabled = true;
+            _chairRender.material.color = _newChairColor;
+        }
     }
     public void OnMouseExit()
     {
-        _chairLight.enabled = false;
-        _chairRender.material.color = _defaultChairColor;
+        if (_isEnabled)
+        {
+            _chairLight.enabled = false;
+            _chairRender.material.color = _defaultChairColor;
+        }
     }
     public override void OnTriggerEnter(Collider other)
     {
-        base.OnTriggerEnter(other);
-            
-        if(isActive && other.name == "Doctor")
+        if (_isEnabled)
         {
-            
-            isActive = false;
+            base.OnTriggerEnter(other);
+
+            if (_isActive && other.name == "Doctor")
+            {
+
+                _isActive = false;
+            }
         }
     }
 }

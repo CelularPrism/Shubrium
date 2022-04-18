@@ -5,6 +5,7 @@ using UnityEngine;
 public class MusicManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSrc;
+    [SerializeField] private AudioSource audioSrc;
     [SerializeField] private AudioClip[] audioPsycho;
     [SerializeField] private AudioClip endGameAudio;
 
@@ -58,6 +59,13 @@ public class MusicManager : MonoBehaviour
         {
             SetAudioClip();
         }
+    }
+
+    public void PlayRing(AudioClip audioClip)
+    {
+        audioSrc.loop = true;
+        audioSrc.clip = audioClip;
+        audioSrc.Play();
     }
 
     public void SetNextAudio()

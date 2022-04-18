@@ -52,7 +52,7 @@ public class PickUpPhone : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if (_dialogScriptAllowed.isActive)
+        if (_dialogScriptAllowed._isActive)
         {
             _doctorAnim.StartDialog();
         }

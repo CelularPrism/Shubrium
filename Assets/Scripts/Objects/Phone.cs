@@ -8,14 +8,14 @@ public class Phone : Objects
     [SerializeField] private AudioPhoneManager audioPhoneManager;
     public override void OnTriggerEnter(Collider other)
     {
-        base.OnTriggerEnter(other);
-
-        if (isActive && other.name == "Doctor")
+        if (_isEnabled)
         {
-            if (this.enabled)
+            base.OnTriggerEnter(other);
+            if (_isActive && other.name == "Doctor")
             {
-                /*Debug.Log(true);
-                PickUp();*/
+                if (this.enabled)
+                {
+                }
             }
         }
     }
@@ -25,7 +25,7 @@ public class Phone : Objects
         dialogScripter.SetNewDialog();
         //audioPhoneManager.PickUp();
         this.enabled = false;
-        isActive = false;
+        _isActive = false;
     }
 
     public void PutDown()

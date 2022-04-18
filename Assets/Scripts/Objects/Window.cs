@@ -8,10 +8,10 @@ public class Window : Objects
     {
         base.OnTriggerEnter(other);
 
-        if (isActive && other.name == "Doctor")
+        if (_isActive && other.name == "Doctor")
         {
             Debug.Log("This is window");
-            isActive = false;
+            _isActive = false;
         }
     }
 }
