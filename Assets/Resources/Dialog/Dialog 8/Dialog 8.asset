@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 8
+  m_EditorClassIdentifier: 
+  text: Mr Psychologist? I think i just developed a new insecurity. A dog i met today
+    told me i looked ugly.
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: ed468c423f9ecab48b1b0663b0766776, type: 2}
+  - {fileID: 11400000, guid: 3f9ce9366ccadab45a64bb4ad080116d, type: 2}
+  - {fileID: 11400000, guid: 09766cdbbf2641041930ab471116bcbd, type: 2}
+  - {fileID: 11400000, guid: 8b71a049c5280e74badb54c072d6196c, type: 2}
+  dialog: {fileID: 0}

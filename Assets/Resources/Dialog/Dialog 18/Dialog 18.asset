@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 18
+  m_EditorClassIdentifier: 
+  text: Hello, Mr. Psychologist? I wanted to learn a new language, but all the books
+    I red are written in some foreign language, perhaps they are defective?
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 484f754504e837b44a62e2a933144bf8, type: 2}
+  - {fileID: 11400000, guid: 5bc1ef41c6b718c4f8deaba85b048289, type: 2}
+  - {fileID: 11400000, guid: d521a4dd850bbee4682a0c15a0a956ff, type: 2}
+  - {fileID: 11400000, guid: 83defefdc5bbeb04aab3c74c16ddac07, type: 2}
+  dialog: {fileID: 0}

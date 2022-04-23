@@ -4,5 +4,8 @@ using UnityEngine;
 
 public interface ObjectsInterface
 {
-    public bool isActive { get; set; }
+    public bool _isActive { get; set; }
+    public bool _isEnabled { get; set; }   //new part
+
+    public Vector3 GetPoint();   //new part
 }

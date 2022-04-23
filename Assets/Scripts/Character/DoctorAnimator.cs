@@ -4,32 +4,57 @@ using UnityEngine;
 
 public class DoctorAnimator : MonoBehaviour
 {
-    [SerializeField] private string _dialogScript; //Здесь ссылка на скрипт (заменить string на тип скрипта), который вызывает начало диалога;
-    [SerializeField] private string _audioManager; //Здесь ссылка на скрипт (заменить string на тип скрипта), который управляет запуском звуковых эффектов;
+    [SerializeField] private ObjectsManager _objectsManager;
+    [SerializeField] private AudioPhoneManager _audioManager;
+    [SerializeField] private Phone _phone;
+    [SerializeField] private GameObject _doctor;
 
     private Animator _myAnimator;
+
+    private DoctorMovement _doctorMovement;
+
+    public Animator DoctorAnimatorController    
+    {
+        get { return _myAnimator; }
+    }
 
     private void Awake()
     {
         _myAnimator = GetComponent<Animator>();
-    }
-    public void StartDialog()
-    {
-        _myAnimator.SetTrigger("Calling");
+
+        _doctorMovement = _doctor.GetComponent<DoctorMovement>();
     }
 
-    public void FinishDialog() //Должен вызываться из _dialogScript, когда завершиться диалог
+    public void StartDialog() //call from script pickupphone, when mouse button down
     {
-        _myAnimator.SetTrigger("EndOfCall");
+        _myAnimator.SetTrigger("Calling"); //It is parameters from previous version of animator controller
+    }
+    
+    public void FinishDialog() //call from script dialogscripter
+    {
+        _myAnimator.SetTrigger("EndOfCall"); //It is parameters from previous version of animator controller
+    }
+    public void GoToTarget()
+    {
+        _myAnimator.SetTrigger("Moving");
     }
     #region Events from animation
-    public void PickUpPhone()
+    public void PickUpPhone() // Events from animation "Take the phone"
     {
         Debug.Log("_audioManager.PlaySound(PickUpPhone)");
+        _audioManager.PickUp();
+        _phone.PickUp();
     }
-    public void PutThePhoneDown()
+    public void PutThePhoneDown() //Events from animation "Put the phone"
     {
         Debug.Log("_audioManager.PlaySound(PutThePhoneDown)");
+        _audioManager.PutDown();
+        FinishAllAnimation();
+    }
+    public void FinishAllAnimation() //Events from animation "DrinkCoffee" (end) and "Standing" (en)
+    {
+        _objectsManager.EnabledObjects();
+        _doctorMovement.SetRotation();
     }
     #endregion
 }

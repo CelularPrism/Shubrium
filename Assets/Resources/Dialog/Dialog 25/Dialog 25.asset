@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 25
+  m_EditorClassIdentifier: 
+  text: Hello, Mr. Psychologist. I was taking the trash out, but my neighbour was
+    very angry about it. It is so strange, I always threw it out of the window.
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 2d02ca519d23f5141844d98adfc39a88, type: 2}
+  - {fileID: 11400000, guid: b4524a324fd80ba4d94b99b449701e69, type: 2}
+  - {fileID: 11400000, guid: 8dc3dd6dcdf816c40a28eac1b7e6aa1c, type: 2}
+  - {fileID: 11400000, guid: ddd750ea7746bb042a1b452bfdc91515, type: 2}
+  dialog: {fileID: 0}

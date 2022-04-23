@@ -6,10 +6,10 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] private PsychoController psychoController;
     [SerializeField] private ObjectsScripter objectsScripter;
-    [SerializeField] private DoctorNavMesh doctorNavMesh;
+    [SerializeField] private DialogScripter dialogScripter;
     [SerializeField] private UIScripter uiScripter;
     [SerializeField] private MusicManager musicManager;
-    [SerializeField] private MusicScriptManager scriptMusic;
+    //[SerializeField] private MusicScriptManager scriptMusic;
 
     private float time;
     private void Start()
@@ -19,14 +19,18 @@ public class SceneController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!psychoController.isLive)
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
+        if (!psychoController.isLive && objectsScripter.isActive)
         {
             psychoController.enabled = false;
             objectsScripter.isActive = false;
-            doctorNavMesh.enabled = false;
+            dialogScripter.enabled = false;
+            //doctorNavMesh.enabled = false;
 
             musicManager.StopMusic();
-            scriptMusic.EndGame();
+            musicManager.EndGame();
             uiScripter.EndGame();
 
             this.enabled = false;

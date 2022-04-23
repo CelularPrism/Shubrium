@@ -72,7 +72,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.6938776
-        functionName: NewEvent
+        functionName: PickUpPhone
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 2adf1afc4f5f1684dbe46d2dcd24f2b6, type: 3}
         floatParameter: 0

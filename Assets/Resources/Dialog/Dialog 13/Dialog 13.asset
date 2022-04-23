@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 13
+  m_EditorClassIdentifier: 
+  text: Hello, Mr.Psychologist. I was walking down the park with my new best friend
+    and some lady started shouting at me and demanded that I must give her dog back.
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: c0ba4971934886b498a3ae24f6878d4f, type: 2}
+  - {fileID: 11400000, guid: 8416dc77d43d2384fa6125ad0592c08c, type: 2}
+  - {fileID: 11400000, guid: 39b1e8cca1875754ab0b67756af0dee9, type: 2}
+  - {fileID: 11400000, guid: bca4f5634c384ab46bf5b62de35d82d3, type: 2}
+  dialog: {fileID: 0}

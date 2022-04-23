@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 5
+  m_EditorClassIdentifier: 
+  text: Mr Psycologist? I think I'm fine now, I'm back to normal but there's no one
+    there. What do i do now?
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 4cb2cedc831ae2348a8835a9b0b7970f, type: 2}
+  - {fileID: 11400000, guid: e91f319b4e3368e4bb70bae1ed6d4751, type: 2}
+  - {fileID: 11400000, guid: 657bd1c48e43d1940be25adcac7e708b, type: 2}
+  - {fileID: 11400000, guid: 8e06688a1cd4f7f40a46243073c78484, type: 2}
+  dialog: {fileID: 0}

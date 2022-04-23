@@ -4,48 +4,62 @@ using UnityEngine;
 
 public abstract class Objects : MonoBehaviour, ObjectsInterface
 {
-    public bool isActive { get; set; } = false;
-    [SerializeField] private ObjectsManager objectsManager;
+    [SerializeField] protected ObjectsManager objectsManager;
+    [SerializeField] protected GameObject checkPoint;
+    public bool _isActive { get; set; } = false;
+    public bool _isEnabled { get; set; }
 
-    private GameObject _mainCharacter;
+    protected GameObject _mainCharacter;
+    protected DoctorAnimator _mainCharacterAnimator;
+    protected DoctorMovement _mainCharacterMovement;
+    protected Transform _mainCharacterTransform;
 
-    private Transform _objectTransform;
-    private Transform _mainCharacterTransform;
+    protected Light _objectLight;
+    protected MeshRenderer _objectRender;
 
-    private float _currentDistance;
-    private float _previousDistance;
+    protected Color _defaultObjectColor;
+    protected Color _newObjectColor;
 
+    public virtual void Awake()
+    {
+        _objectLight = GetComponent<Light>();
+        _objectRender = GetComponent<MeshRenderer>();
+
+        _defaultObjectColor = _objectRender.material.color; ;
+    }
     public void Start()
     {
-        _mainCharacterTransform = GameObject.Find("Doctor").GetComponent<Transform>();
-        _objectTransform = GetComponent<Transform>();
-        Debug.Log(_objectTransform.transform.position);
-    }
+        _isEnabled = true;
 
-    public void OnMouseDown()
+        _mainCharacter = GameObject.Find("Doctor");
+        _mainCharacterAnimator = _mainCharacter.GetComponent<DoctorAnimator>();
+        _mainCharacterMovement = _mainCharacter.GetComponent<DoctorMovement>();
+        _mainCharacterTransform = _mainCharacter.GetComponent<Transform>();
+    }
+    public virtual void OnMouseEnter()
     {
-        isActive = true;
-        if (this.enabled)
-            _currentDistance = Vector3.Distance(_mainCharacterTransform.transform.position, _objectTransform.transform.position);
-        objectsManager.DisableActive(this);
-        //GameObject ob
+        _objectLight.enabled = true;
+        _objectRender.material.color = _newObjectColor;
+    }
+    public virtual void OnMouseExit()
+    {
+        _objectLight.enabled = false;
+        _objectRender.material.color = _defaultObjectColor;
+    }
+    public virtual void OnMouseDown()
+    {
+        _isActive = true;
+        objectsManager.DisableActive(this);  // this function also calls the method SetPoint from PlayerMovement
     }
     public virtual void OnTriggerEnter(Collider other)
     {
+        _mainCharacterTransform.position = new Vector3(_mainCharacterTransform.position.x, _mainCharacterTransform.position.y, transform.position.z);
+        _mainCharacterMovement.AllowedMove = false;
 
+        _isActive = false;
     }
-    public void Update()
+    public Vector3 GetPoint()
     {
-        if (isActive)
-        {
-            _previousDistance = _currentDistance;
-            _currentDistance = Vector3.Distance(_mainCharacterTransform.transform.position, _objectTransform.transform.position);
-
-            if (_currentDistance > _previousDistance)
-            {
-                isActive = false;
-                Debug.Log("Is Active = " + isActive);
-            }
-        }
+        return checkPoint.transform.position;
     }
 }

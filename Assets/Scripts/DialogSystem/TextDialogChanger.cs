@@ -42,7 +42,7 @@ public class TextDialogChanger : MonoBehaviour
         else
         {
             textField.text = "- " + oldText;
-            indexText = oldText.Length - 1;
+            indexText = oldText.Length;
         }
         return false;
     }

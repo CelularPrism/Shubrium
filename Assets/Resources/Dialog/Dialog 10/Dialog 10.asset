@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 10
+  m_EditorClassIdentifier: 
+  text: Mister Psychologist? My reflection in the mirror stopped answering me, can
+    I talk to you instead?
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 46a935949a02d0c4d81dc3d9673f60bd, type: 2}
+  - {fileID: 11400000, guid: 032237bdbdf149a47a9ca9b4812bafe1, type: 2}
+  - {fileID: 11400000, guid: 34d251a013124fd4e93fdbda5e0df665, type: 2}
+  - {fileID: 11400000, guid: a50d698c66326b7429c3ab17a81d5a85, type: 2}
+  dialog: {fileID: 0}

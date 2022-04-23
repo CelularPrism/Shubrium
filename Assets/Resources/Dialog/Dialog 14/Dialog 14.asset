@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 14
+  m_EditorClassIdentifier: 
+  text: Hello, Mr.Psychologist. There was a charity event aimed towards helping people
+    in need, but when I took some money for my needs, security kicked me out.
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: 3a88c6d67570ef1489adb9b5dccc6928, type: 2}
+  - {fileID: 11400000, guid: c0d3f88c7dfe2084ca4ca8179769a8a3, type: 2}
+  - {fileID: 11400000, guid: c3a9669896a4ce142917661aa326eb4f, type: 2}
+  - {fileID: 11400000, guid: a803ed76f14b37d479d9c5d3392bf732, type: 2}
+  dialog: {fileID: 0}

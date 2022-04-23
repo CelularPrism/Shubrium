@@ -8,7 +8,8 @@ public class DialogScripter : MonoBehaviour
 {
     [SerializeField] private GameObject dialogGameObject;
     [SerializeField] private GameObject dialogChangerGameObject;
-    [SerializeField] private DoctorNavMesh doctorNav;
+    [SerializeField] private DoctorAnimator doctorAnimator;
+    [SerializeField] private ObjectsManager objectsManager;
     [SerializeField] private Phone phone;
 
     private List<DialogInterface> dialogInterfaces;
@@ -21,6 +22,8 @@ public class DialogScripter : MonoBehaviour
         dialogManager = dialogGameObject.GetComponent<DialogManager>();
         objectsScripter = GetComponent<ObjectsScripter>();
         SetDialogList();
+
+        //objectsManager.EnabledObjects(); //from if statement in fixedupdate
     }
 
     private void SetDialogList()
@@ -38,23 +41,26 @@ public class DialogScripter : MonoBehaviour
         {
             if (_phoneActive)
             {
+                doctorAnimator.FinishDialog();
                 _phoneActive = false;
-                phone.PutDown();
             }
 
-            if (!phone.enabled)
+            //if (!phone.enabled)
+            if(!phone._setDialog)
+            {
+                //objectsManager.EnabledObjects(); //moved to Doctor animator, method FinishAllAnimation()
                 objectsScripter.isActive = true;
-            doctorNav.enabled = true;
-        } else
-        {
-            doctorNav.enabled = false;
+            }
         }
     }
 
     public void SetNewDialog()
     {
+
         if (dialogInterfaces.Count > 0)
         {
+            objectsManager.DisabledObjects();
+
             int random = Random.Range(0, dialogInterfaces.Count);
             DialogInterface dialog = dialogInterfaces[random];
 

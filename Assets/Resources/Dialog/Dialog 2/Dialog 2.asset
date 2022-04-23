@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448f87242dc3fb44fbc582399557c808, type: 3}
+  m_Name: Dialog 2
+  m_EditorClassIdentifier: 
+  text: Mr Psycologist? Hello? Do I have the right number? I cleaned the house today,
+    just like you asked me to.
+  haveVariants: 1
+  variants:
+  - {fileID: 11400000, guid: f670e0d11b606934e9d6f6b4de27257a, type: 2}
+  - {fileID: 11400000, guid: 85c0dc05c8fe710449ae4409da23f715, type: 2}
+  - {fileID: 11400000, guid: 4a96872090c6cc94aac22563c4ee1843, type: 2}
+  - {fileID: 11400000, guid: efc15ec8d57741f49bb81e80f6322a88, type: 2}
+  dialog: {fileID: 0}
