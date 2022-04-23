@@ -21,7 +21,8 @@ public class CoffeeMachine : Objects
     {
         if (_isEnabled)
         {
-            _coffeeMachineLight.enabled = true;
+            if (_coffeeMachineLight != null)
+                _coffeeMachineLight.enabled = true;
             _coffeeMachineRender.material.color = _newCoffeeMachineColor;
         }
     }
@@ -29,7 +30,8 @@ public class CoffeeMachine : Objects
     {
         if (_isEnabled)
         {
-            _coffeeMachineLight.enabled = false;
+            if (_coffeeMachineLight != null)
+                _coffeeMachineLight.enabled = false;
             _coffeeMachineRender.material.color = _defaultCoffeeMachineColor;
         }    }
     public override void OnTriggerEnter(Collider other)

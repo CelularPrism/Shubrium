@@ -6,6 +6,10 @@ public class Phone : Objects
 {
     [SerializeField] private DialogScripter dialogScripter;
     [SerializeField] private AudioPhoneManager audioPhoneManager;
+    [SerializeField] private GameObject panelDialog;
+    [SerializeField] private GameObject panelDialogChanger;
+
+    private bool _isMiniGame = false;
     public override void OnTriggerEnter(Collider other)
     {
         if (_isEnabled)
@@ -13,11 +17,21 @@ public class Phone : Objects
             base.OnTriggerEnter(other);
             if (_isActive && other.name == "Doctor")
             {
-                if (this.enabled)
+                if (this.enabled && !_isMiniGame)
                 {
+                    dialogScripter.SetNewDialog();
+                } else if (_isMiniGame)
+                {
+                    //Debug.Log("Minigame disabled");
+                    
                 }
             }
         }
+    }
+
+    public void ChangeMiniGameBool(bool value)
+    {
+        _isMiniGame = value;
     }
 
     public void PickUp()

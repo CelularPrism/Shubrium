@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Objects\PickUpPhone.cs" />
     <Compile Include="Assets\Scripts\ObjectsScripter.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog22.cs" />
+    <Compile Include="Assets\Scripts\UI MiniGame\UIMovementManager.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog21.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog14.cs" />
     <Compile Include="Assets\Scripts\Objects\Phone.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\Scripts\MusicScriptManager.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectsManager.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog1.cs" />
+    <Compile Include="Assets\Scripts\UI MiniGame\UIMovement.cs" />
     <Compile Include="Assets\Scripts\PsychoScripter.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioMusicSource.cs" />
     <Compile Include="Assets\Scripts\Managers\Audio\AudioManager.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="Assets\Scripts\Managers\Audio\AudioEffectSource.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog5.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog10.cs" />
+    <Compile Include="Assets\Scripts\UI MiniGame\UIMiniGameManager.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog3.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog25.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogScripter.cs" />
@@ -119,8 +122,7 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog24.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog30.cs" />
-    <Compile Include="Assets\Scripts\UI MiniGame\UIMovement.cs" />
-    <Compile Include="Assets\Scripts\UI MiniGame\UIMovementManager.cs" />
+    <Compile Include="Assets\Scripts\EnablerScripts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />

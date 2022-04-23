@@ -24,7 +24,7 @@ public class UIMovementManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = new Vector3(player.position.x, transform.position.y, player.position.z);
+        //transform.position = new Vector3(player.position.x, transform.position.y, player.position.z);
     }
 
     public void ClickOnObject(Transform transform)
@@ -32,12 +32,19 @@ public class UIMovementManager : MonoBehaviour
         Debug.Log("Click on: " + transform.name);
     }
 
-    public Vector3 GetNewPos(Vector3 nowPos)
+    public Vector2 GetNewPos(Vector2 nowPos)
     {
         float posX = Random.Range(_leftDownCorner.x, _rightUpCorner.x);
         float posY = Random.Range(_leftDownCorner.y, _rightUpCorner.y);
 
-        Vector3 newPos = new Vector3(posX, posY, 0f);
+        Vector2 newPos = new Vector2(posX, posY);
         return newPos;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(_leftDownCorner, 10f);
+        Gizmos.DrawSphere(_rightUpCorner, 10f);
     }
 }

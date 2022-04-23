@@ -6,6 +6,9 @@ public class DefaultObject : MonoBehaviour, ObjectsInterface
 {
     public bool _isActive { get; set; }
     public bool _isEnabled { get; set; }
+    public bool _miniGameEnabled { get; set; }
+    public UIMiniGameManager _miniGameManager { get; set; }
+
     public ObjectsManager objectsManager;
 
     // Start is called before the first frame update
@@ -20,7 +23,7 @@ public class DefaultObject : MonoBehaviour, ObjectsInterface
         if (_isEnabled)
         {
             _isActive = true;
-            objectsManager.DisableActive(this);
+            objectsManager.Active(this);
         }
     }
 

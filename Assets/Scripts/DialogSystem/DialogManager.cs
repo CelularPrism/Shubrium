@@ -16,11 +16,7 @@ public class DialogManager : MonoBehaviour
 
     private void Start()
     {
-        /*dialogInterface = new DialogOne();
-        dialog = dialogInterface.GetDialog();
-        dialogInterface.dialogManager = this;
-
-        dialogChanger.SetNewText(dialog.text);*/
+        SetDialog(new Dialog1());
     }
 
     private void FixedUpdate()
@@ -106,5 +102,10 @@ public class DialogManager : MonoBehaviour
     public void VariantD()
     {
         dialogInterface.VariantD();
+    }
+
+    public SODialog GetDialog()
+    {
+        return dialog;
     }
 }

@@ -22,7 +22,8 @@ public class Chair : Objects
     {
         if (_isEnabled)
         {
-            _chairLight.enabled = true;
+            if (_chairLight != null)
+                _chairLight.enabled = true;
             _chairRender.material.color = _newChairColor;
         }
     }
@@ -30,7 +31,8 @@ public class Chair : Objects
     {
         if (_isEnabled)
         {
-            _chairLight.enabled = false;
+            if (_chairLight != null)
+                _chairLight.enabled = false;
             _chairRender.material.color = _defaultChairColor;
         }
     }
@@ -42,7 +44,10 @@ public class Chair : Objects
 
             if (_isActive && other.name == "Doctor")
             {
-
+                if (!_miniGameEnabled && _miniGameManager != null)
+                {
+                    _miniGameManager.EnableDialog();
+                }
                 _isActive = false;
             }
         }
