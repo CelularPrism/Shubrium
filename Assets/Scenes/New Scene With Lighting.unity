@@ -2034,6 +2034,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1978105447571865680, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
+      propertyPath: _chair
+      value: 
+      objectReference: {fileID: 7060611357604530115}
+    - target: {fileID: 1978105447571865680, guid: 986870b20de5341468e8e5412a40e1d0, type: 3}
       propertyPath: _phone
       value: 
       objectReference: {fileID: 7060611357604530114}
@@ -3464,6 +3468,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 829122768, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+      propertyPath: m_Size.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 829122768, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+      propertyPath: m_Size.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 829122768, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+      propertyPath: m_Center.y
+      value: 0.002
+      objectReference: {fileID: 0}
     - target: {fileID: 1416330472, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
       propertyPath: doctorMovement
       value: 
@@ -3472,6 +3488,10 @@ PrefabInstance:
       propertyPath: dialogScripter
       value: 
       objectReference: {fileID: 2018043172}
+    - target: {fileID: 7060611355638832605, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+      propertyPath: m_Size.x
+      value: 0.025
+      objectReference: {fileID: 0}
     - target: {fileID: 7383350202064028444, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3546,5 +3566,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df25b86a867324543804540fce8d88ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7060611357604530115 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5409322395941128748, guid: ea834384f6ea3984cb40c299e2670151, type: 3}
+  m_PrefabInstance: {fileID: 7060611357604530112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504f3f3ed41328748b56db906619a613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

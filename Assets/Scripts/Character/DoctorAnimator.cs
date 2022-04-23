@@ -7,6 +7,7 @@ public class DoctorAnimator : MonoBehaviour
     [SerializeField] private ObjectsManager _objectsManager;
     [SerializeField] private AudioPhoneManager _audioManager;
     [SerializeField] private Phone _phone;
+    [SerializeField] private Chair _chair;
     [SerializeField] private GameObject _doctor;
 
     private Animator _myAnimator;
@@ -54,6 +55,10 @@ public class DoctorAnimator : MonoBehaviour
     public void FinishAllAnimation() //Events from animation "DrinkCoffee" (end) and "Standing" (en)
     {
         _objectsManager.EnabledObjects();
+        if(DoctorAnimatorController.GetCurrentAnimatorStateInfo(0).IsName("PutThePhone"))
+        {
+            _chair._isEnabled = false;
+        }
         _doctorMovement.SetRotation();
     }
     #endregion

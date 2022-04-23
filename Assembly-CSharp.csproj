@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{00C820F5-7209-1A32-A714-384F9453276B}</ProjectGuid>
+    <ProjectGuid>{2B82AE96-8883-A972-0542-8C6A39E16CEE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scripts\DialogSystem\TextDialogChanger.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog15.cs" />
     <Compile Include="Assets\Scripts\Character\AudioMovementController.cs" />
-    <Compile Include="Assets\Scripts\Objects\PickUpPhone.cs" />
     <Compile Include="Assets\Scripts\ObjectsScripter.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog22.cs" />
     <Compile Include="Assets\Scripts\UI MiniGame\UIMovementManager.cs" />
@@ -110,6 +109,7 @@
     <Compile Include="Assets\Scripts\Managers\Audio\AudioEffectSource.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog5.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog10.cs" />
+    <Compile Include="Assets\Scripts\Objects\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog3.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog25.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogScripter.cs" />
@@ -122,7 +122,6 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog24.cs" />
     <Compile Include="Assets\Scripts\Objects\CoffeeMachine.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogClasses\Dialog30.cs" />
-    <Compile Include="Assets\Scripts\Objects\CheckPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D Models\Test.txt" />
